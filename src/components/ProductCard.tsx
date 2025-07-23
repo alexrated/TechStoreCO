@@ -21,7 +21,7 @@ function ProductCard({ product, dispatch }: ProductCardProps) {
     const { name, image, description, price } = product
 
     return (
-        <div className="flex flex-col -mx-3 justify-center items-center w-full bg-zinc-950 rounded-md">
+        <div className="flex flex-col -mx-3 justify-center items-center w-full bg-gray-950 rounded-md">
             <div className="px-3">
                 <img
                     className="w-[20rem] h-auto"
