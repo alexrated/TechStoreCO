@@ -3,7 +3,7 @@
     Author   >>> alexrated
     Date     >>> 20-07-2025
         This file contains the app to be render in main.tsx
-        This uncomplex proyect is written as a studying excersise; 
+        This uncomplex proyect is written as a studying excersise;
         specifically, a shopping cart
 */
 import { useEffect, useReducer } from "react"
@@ -16,7 +16,7 @@ function App() {
 
     // Reducer for managing logic and states:
     const [ state, dispatch ] = useReducer(cartReducer, initialState)
-    
+
     // Saving data in local storage. useEffect needed to prevent asynchronous nature of state:
     useEffect(() => {
         localStorage.setItem('cart', JSON.stringify(state.cart))
@@ -33,7 +33,7 @@ function App() {
             {/* Main section. A title and a grid of product card components: */}
             <main className="mt-10 md:mt-12 w-[90%] md:max-w-6xl mx-8 md:mx-auto">
                 <h2 className="text-5xl text-center text-violet-600 font-bold">
-                   Nuestros Productos 
+                   Nuestros Productos
                 </h2>
                 {/* Grid of product cards: */}
                 <div className="mt-10 md:mt-12 grid md:grid-cols-2 gap-6">

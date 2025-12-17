@@ -34,7 +34,7 @@ export const initialState: CartState = {
 }
 
 // Global variables to stablish min and max limits for items to add to car:
-const MIN_ITEMS = 1 
+const MIN_ITEMS = 1
 const MAX_ITEMS = 5
 
 // Our reducer takes the initial state and the actions to be dispatch:
@@ -100,7 +100,7 @@ export const cartReducer = (
             cart
         }
     }
-    
+
     // Increasing an item's quantity in the cart. Cannot be more than 5:
     if (action.type === 'increase-quantity') {
         const cart = state.cart.map(product => {

@@ -4,7 +4,7 @@
     Date     >>> 22-07-2025
         This file contains the Footer component to be render in App.tsx
         If we consider the current state of the app, theres is no need
-        to write a separate component for the footer. This is mainly done 
+        to write a separate component for the footer. This is mainly done
         for possible future updates
 */
 
